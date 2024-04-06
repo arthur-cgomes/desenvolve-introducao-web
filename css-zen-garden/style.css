@@ -1,21 +1,40 @@
 /* .principal {
-    color: white;
+    color: #1f295c;
 }
 
 .background {
-    color: #858889;
+    color: #fbfcfd;
 }
 
 .destaque {
-    color: #f26600;
+    color: #ff1492;
 } */
+
+.page-wrapper {
+    position: relative;
+}
+
+.explanation {
+    width: 60%;
+    ;
+    border-right: #1f295c solid 1px;
+    padding-right: 2%;
+}
+
+#design-selection {
+    position: absolute;
+    top: 560px;
+    left: 62%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
 
 .main footer {
     margin: 4%;
 }
 
 main footer a {
-    border: solid 2px #858889;
+    border: solid 2px #fbfcfd;
     padding: 0.5em;
     display: inline-block;
 }
@@ -44,7 +63,7 @@ aside ul li {
 }
 
 #zen-intro header {
-    background-color: #f26600;
+    background-color: #1f295c;
     color: white;
 }
 
@@ -59,8 +78,8 @@ aside ul li {
 }
 
 html {
-    background: #858889;
-    color: white;
+    background: #fbfcfd;
+    color: #1f295c;
     font-size: 17px;
     font-family: Helvetica, sans-serif;
 }
