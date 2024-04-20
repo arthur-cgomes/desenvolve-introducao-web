@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+h1,
+h2 {
+    font-family: 'Times New Roman', serif;
+}
+
+:root {
+    --cor-principal: #FFFFFF;
+    --cor-secundaria: #000000;
+    --cor-destaque: #1E3C72;
+    --cor-rodape: #E0E0E0;
+    --cor-menu: #0B2559;
+}
+
+body {
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: var(--cor-menu);
+    color: var(--cor-principal);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    padding: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--cor-principal);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        text-align: left;
+    }
+
+    #educacao,
+    #certificacoes,
+    #experiencia {
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 769px) {
+
+    header,
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        justify-content: space-between;
+    }
+}
+
+header {
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: var(--cor-rodape);
+    color: var(--cor-principal);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#educacao,
+#certificacoes,
+#experiencia {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#educacao div,
+#certificacoes div,
+#experiencia div {
+    margin-bottom: 20px;
+}
+
+#educacao h2,
+#certificacoes h2,
+#experiencia h2 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
